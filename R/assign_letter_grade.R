@@ -1,9 +1,13 @@
+library(dplyr)
+
 assign_letter_grade <- function(x){
 	
-	cut(x = x,
-		 breaks = c(-Inf, 60, 70, 80, 90, Inf),
-		 labels = c("F", "D", "C", "B", "A"),
-		 include.lowest = TRUE,
-		 right = FALSE)
+	case_when(
+		x < 60 ~ "F",
+		x >= 60 & x < 70 ~ "D",
+		x >= 70 & x < 80 ~ "C",
+		x >= 80 & x < 90 ~ "B",
+		x >= 90 ~ "A"
+	)
 }
 
