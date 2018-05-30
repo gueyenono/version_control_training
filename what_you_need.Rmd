@@ -1,0 +1,33 @@
+---
+title: "Recommended reads for version control"
+author: "Ghislain Nono Gueye, Ph.D."
+date: ""
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Required tools for version control
+
+- Git
+
+- An account on a Version Control System (VCS) (e.g. Gitlab, Github, Bitbucket)
+
+- A Git GUI (GUI = General User Interface)
+
+
+## Recommended resources for Git/Github
+
+### Presentation slides
+
+- Git for humans (by Alice Barlett): <https://speakerdeck.com/alicebartlett/git-for-humans>
+
+
+### Books
+
+- Happy Git and Github for the useR (by Jenny Bryan): <http://happygitwithr.com/>
+
+
+### Videos
