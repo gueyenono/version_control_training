@@ -1,4 +1,10 @@
+library(dplyr)
+
 drop_n <- function(x, eval, n){
-	evals <- grep(pattern = eval, x = colnames(x), ignore.case = TRUE)
-	apply(x[, evals], 1, function(x) sort(x)[-(1:n)])			
+	dat %>%
+		select(contains(eval)) %>%
+		transpose() %>%
+		map(flatten_dbl) %>%
+		map(~ sort(.x)[-(1:n)])			
 }
+
