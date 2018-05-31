@@ -16,11 +16,11 @@ Develop a suite of functions (i.e. a package) that will help professors in their
 
 ## Guidelines
 
-- The **activities** below will make you produce new code or alter already exisiting code. Commit every step in the process using thoughtful commit messages.
+- The **activities** below will make you produce new code and, in many cases, alter it.
 
-- If you come up with ideas to improve the code, commit these changes too.
+- If you come up with ideas to improve the code in ways that are not specified in the instructions, feel free to do it and commit your changes.
 
-- Push your local repo to Github after each activity.
+- Push your local repo to Github at the end of each activity.
 
 
 ## Activity 1 (learning goals: local repository, remote repository, commit, push, diff)
@@ -46,22 +46,28 @@ Develop a suite of functions (i.e. a package) that will help professors in their
 	
 	- The second version of the function should used a scoped version of `mutate()` (i.e. `mutate_*()`).
 
+	- Push your local repository to Github.
 
-## Activity 3 (learning goals: pull request, branch, merge)
+	- Visualize the **diffs** between your commits.
+
+
+## Activity 3 (learning goals: branch, pull request, merge)
 
 - Create a function which computes weight averages (`compute_weighted_average()`).
 
 	- The first version of the function should use a pure base `R` approach (with (a1+a2+a3)/3).
 	
-	- A collaborator on the project  must send a **pull request** and improve the code by using the `mean()` function instead.
+	- A collaborator on the project must fork the project improve on it and send a **pull request**. Improvements must make use of `rowMeans()`.
 	
-	- The second version of the function should use the `tidyverse` approach.
+	- The owner of the master branch must analyze the code and merge it.
 	
 	
-## Activity 4 ()
+## Activity 4 (learning goals: branch, pull request, merge)
 
-- Create a function to drop the lowest score in a group of evaluations (`drop_lowest()`).
+- Create a function to drop the lowest n scores in a group of evaluations (`drop_n()`).
 
-	- Version 1: 
+	- Version 1: Make use of `apply(..., 1, ....)
+	
+	- Version 2: Make use of `transpose()` and `pmap()`.
 	
 	- Version 2:
