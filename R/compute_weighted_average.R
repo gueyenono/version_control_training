@@ -1,3 +1,5 @@
+library(dplyr)
+
 compute_weighted_average <- function(x, eval, weight){
 	x %>%
 		select(contains(eval)) %>%
